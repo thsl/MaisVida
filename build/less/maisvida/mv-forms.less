@@ -1,0 +1,43 @@
+/*
+ * Component: Forms
+ * ---------------
+ */
+.input-voice-btn {
+  border-radius: 8px;
+  border: 1px solid #B7B7B7;
+  margin: 0;
+  height: 62px;
+
+  &:focus + .input-group-btn .btn {
+    border: 0;
+    border-color: #0076FF;
+    color: @mv-color-darkblue;
+  }
+  input[type="text"], .btn {
+    box-shadow: none;
+    border-radius: 8px;
+    background-color: @white;
+    border: 1px solid transparent;
+    height: 62px;
+    color: @mv-color-darkblue;
+    .transition(all @transition-speed @transition-fn);
+  }
+  input[type="text"] {
+    font-size: 24px;
+    color: @mv-color-darkblue;
+    border-radius: 8px;
+    &:focus, &:focus + .input-group-btn .btn {
+      background-color: @white;
+      color: @mv-color-darkblue;
+      border-color: #0076FF;
+    }
+  }
+  .btn {
+    color: @mv-color-darkblue;
+    border-radius: 8px;
+    width: 75px;
+    &:focus {
+      border: 0;
+    }
+  }
+}

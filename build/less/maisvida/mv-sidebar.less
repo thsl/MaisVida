@@ -1,0 +1,131 @@
+.main-sidebar,
+.left-side {
+  padding-top: @navbar-height;
+  @transition-rule: @transition-speed @transition-fn,
+  width @transition-speed @transition-fn;
+  .transition-transform(@transition-rule);
+  @media (max-width: @screen-header-collapse) {
+    padding-top: 100px;
+  }
+  @media (max-width: @screen-xs-max) {
+    .translate(-@sidebar-width, 0);
+  }
+  @media (max-width: @screen-sm) {
+    padding-top: 200px;
+  }
+  @media (max-width: @screen-xs) {
+    padding-top: 300px;
+  }
+  .sidebar-collapse & {
+    @media (min-width: @screen-sm) {
+      .translate(-@sidebar-width, 0);
+    }
+  }
+  .sidebar-open & {
+    @media (max-width: @screen-xs-max) {
+      .translate(0, 0);
+    }
+  }
+}
+
+/*
+ * Component: Sidebar Mini
+ */
+
+.sidebar-mini {
+  @media (min-width: @screen-sm) {
+    &.sidebar-collapse {
+      .content-wrapper,
+      .right-side,
+      .main-footer {
+        margin-left: 90px !important;
+        z-index: 840;
+      }
+      .main-sidebar {
+        width: 90px !important;
+      }
+      .main-header {
+        .logo {
+
+          display: none;
+          > .logo-mini {
+            display: none;
+          }
+          > .logo-lg {
+            display: none;
+          }
+        }
+
+        //Since the logo got smaller, we need to fix the navbar's position
+        .navbar {
+          margin-left: 90px;
+        }
+      }
+      .sidebar-toggle {
+        width: 90px;
+      }
+      .sidebar-menu > li > a > span {
+        display: block !important;
+        text-align: center;
+      }
+      .sidebar-menu > li > a > .fa, .sidebar-menu > li > a > .glyphicon, .sidebar-menu > li > a > .ion {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+.sidebar-menu,
+.main-sidebar .user-panel,
+.sidebar-menu > li.header {
+  white-space: normal;
+  overflow: hidden;
+}
+
+.sidebar-menu {
+
+  > li {
+
+    > a {
+      padding: 10px;
+font-size: 11px;
+      > .fa,
+      > .glyphicon,
+      > .ion {
+        font-size: 25px;
+        margin: 8px 8px 8px 0;
+      }
+    }
+    .label,
+    .badge {
+
+    }
+  }
+  li.header {
+  }
+  li > a > .fa-angle-left {
+
+  }
+  li.active {
+    > a > .fa-angle-left {
+    }
+    > .treeview-menu {
+    }
+  }
+
+}
+
+.sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right), .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+
+
