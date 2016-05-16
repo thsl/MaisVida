@@ -3,6 +3,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   letter-spacing: -0.02em;
+  background-color: #ecf0f5;
 }
 
 h1,
@@ -18,6 +19,9 @@ h6,
 .h5,
 .h6 {
   font-family: @font-family-proxima;
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding: 0;
 }
 
 // ---------------------------------------------------------------
@@ -296,6 +300,10 @@ h6,
   text-transform: lowercase !important;
 }
 
+.text-line-through {
+  text-decoration: line-through
+}
+
 // ---------------------------------------------------------------
 // Imagens adaptativas
 .img-adaptative {
@@ -306,4 +314,65 @@ h6,
 .img-full {
   width: 100%;
   height: auto !important;
+}
+
+// Cores padrão
+
+.darkblue-mv {
+  color: @mv-color-darkblue;
+  a {
+    color: @mv-color-darkblue;
+    &:hover, &:active, &:visited {
+      color: @mv-color-darkblue;
+    }
+  }
+  + a {
+    color: @mv-color-darkblue;
+    &:hover, &:active, &:visited {
+      color: @mv-color-darkblue;
+    }
+  }
+  > a {
+    color: @mv-color-darkblue;
+    &:hover, &:active, &:visited {
+      color: @mv-color-darkblue;
+    }
+  }
+}
+
+.mv-green {
+  color: @mv-color-green;
+  a {
+    color: @mv-color-green;
+    &:hover, &:active, &:visited {
+      color: @mv-color-green;
+    }
+  }
+  + a {
+    color: @mv-color-green;
+    &:hover, &:active, &:visited {
+      color: @mv-color-green;
+    }
+  }
+  > a {
+    color: @mv-color-green;
+    &:hover, &:active, &:visited {
+      color: @mv-color-green;
+    }
+  }
+}
+
+
+.mv-check{
+  input[type=checkbox]:not(old):checked + label > span:before{
+    content     : '✓';
+    display     : block;
+    width       : 1em;
+    color       : rgb(153,204,102);
+    font-size   : 0.875em;
+    line-height : 1em;
+    text-align  : center;
+    text-shadow : 0 0 0.0714em rgb(115,153,77);
+    font-weight : bold;
+  }
 }

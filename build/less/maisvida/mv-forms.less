@@ -12,8 +12,20 @@
     border: 0;
     border-color: #0076FF;
     color: @mv-color-darkblue;
+
   }
-  input[type="text"], .btn {
+  .input-group-btn {
+    border-radius: 8px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: @white;
+
+  }
+  input[type="text"], select, .btn {
     box-shadow: none;
     border-radius: 8px;
     background-color: @white;
@@ -22,7 +34,7 @@
     color: @mv-color-darkblue;
     .transition(all @transition-speed @transition-fn);
   }
-  input[type="text"] {
+  input[type="text"], select {
     font-size: 24px;
     color: @mv-color-darkblue;
     border-radius: 8px;
@@ -32,12 +44,34 @@
       border-color: #0076FF;
     }
   }
+  select {
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  textarea {
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 0;
+  }
   .btn {
     color: @mv-color-darkblue;
     border-radius: 8px;
     width: 75px;
+    padding: 0;
+    min-width: initial;
     &:focus {
       border: 0;
     }
+  }
+  .btn-voice{
+    background: url("@{img-path-mv}/icons/voice-c.png") no-repeat center center;
   }
 }

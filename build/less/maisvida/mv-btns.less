@@ -48,10 +48,45 @@
   }
 }
 
-.btn-primary {
+.btn-mv{
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  min-width:180px;
+}
+.btn-mv-green {
   background-color: @mv-color-green;
   border-color: darken(@mv-color-green, 5%);
   &:hover, &:active, &.hover, &:focus {
     background-color: darken(@mv-color-green, 5%) !important;
+    color: @white;
+  }
+}
+
+
+// Botões arredendados gigantes
+
+.round-button {
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  border: 2px solid lighten(@mv-color-green, 10%);
+  border-radius: 50%;
+  color: @white;
+  text-align: center;
+  text-decoration: none;
+  background: @mv-color-green;
+  box-shadow: 0 0 3px gray;
+  margin: 0 auto;
+
+  &:hover, &:focus {
+    background: lighten(@mv-color-green, 5%);
+  }
+  @media (max-width: @screen-md) {
+    width: 150px;
+    height: 150px;
+    line-height: 85px;
+    padding: 30px;
   }
 }
