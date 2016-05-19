@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en" ng-app="mais-vida">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <title>Mais Vida</title>
+
+  <link rel="stylesheet" href="include/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="include/admin-lte/css/AdminLTE.css">
+  <link rel="stylesheet" href="app/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app/css/ionicons.css">
+  <link rel="stylesheet" href="app/css/maisvida.css">
+
+  <script src="include/jquery/jquery.js"></script>
+  <script src="include/bootstrap/js/bootstrap.min.js"></script>
+  <script src="include/admin-lte/js/app.min.js"></script>
+  <!-- script src="include/angular/angular.js"></script>
+  <script src="include/angular/animate/angular-animate.js"></script>
+  <script src="include/angular/route/angular-route.js"></script>
+  <script src="include/angular/resource/angular-resource.js"></script -->
+
+  <script src="app/js/core.js"></script>
+  <!-- script src="app/js/app.js"></script>
+  <script src="app/js/animations.js"></script>
+  <script src="app/js/controllers.js"></script>
+  <script src="app/js/filters.js"></script>
+  <script src="app/js/services.js"></script -->
+</head>
+
+<body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
+<div class="wrapper">
+
+  <header class="main-header">
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+    <a href="#" class="logo">
+            <span class="logo-lg"><img src="app/img/logos/logo-maisvida-w-md.png"
+                                       class="img-adaptative"></span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="back-btn">
+        <span class="sr-only">Voltar</span>
+      </a>
+      <div class="navbar-custom-menu">
+        <form action="#" method="get" class="header-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Toque para buscar">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat" data-toggle="control-sidebar">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+          </div>
+        </form>
+      </div>
+      <a href="#" class="voice-btn text-center pull-right">
+        <img src="app/img/icons/voice-w.png" class="img-adaptative">
+        <br>Comandos de voz
+      </a>
+    </nav>
+  </header>
+  <aside class="main-sidebar">
+    <section class="sidebar">
+      <div class="user-panel">
+        <div class="pull-left image ml-sm">
+          <img src="app/img/icons/generic-user.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info ml-sm">
+          <p>Alexander Pierce</p>
+          <a href="#">Recepção HRT</a>
+        </div>
+      </div>
+      <ul class="sidebar-menu">
+        <li class="active"><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>
+          <span>Novo paciente</span></a></li>
+        <li><a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i> <span>Acolhimento</span></a></li>
+        <li class="has-alert"><a class="ball-alert">1</a>
+          <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i><span>Avisos</span></a></li>
+        <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> <span>Atividades</span></a></li>
+        <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chat</span></a></li>
+        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Logout</span></a></li>
+      </ul>
+    </section>
+  </aside>
+  <!-- inicia o conteúdo central -->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <div class="row mt-lg">
+        <div class="col-sm-8">
+          <h3 class="text-upper">
+            <strong>Paciente em triagem</strong>
+          </h3>
+        </div>
+        <div class="col-sm-4 fontsize-sm">
+          <p class="mt-md text-right">Última Atualização 00/00/0000 | Feita por <a><strong>Aline
+            Silva</strong></a> <br>
+            Possui: <strong class="text-olive">Cadastro biométrico</strong> | <strong
+                    class="text-olive">Reconhecimanto
+              vocal</strong></p>
+        </div>
+      </div>
+      <section title="dados-pessoais" class="cadastro-section">
+        <div class="row divider-bottom">
+          <div class="col-sm-12">
+            <h4 class="text-upper mt-md">
+              <a href="#cadastro-ddspessoais" data-toggle="collapse" aria-controls="cadastro-ddspessoais"
+                 expanded="false" class="darkblue-mv"> <strong>Dados pessoais</strong></a>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="cadastro-ddspessoais" class="collapse in">
+              <div class="row mt-md">
+                <div class="col-sm-1">
+                  <img src="app/img/icons/generic-user-sm.jpg" class="img-circle">
+                </div>
+                <div class="col-sm-7">
+                  <label>
+                    Nome do paciente
+                  </label>
+                  <h4>Paulo Henrique Silveira</h4>
+                </div>
+                <div class="col-sm-1">
+                  <label>
+                    Idade
+                  </label>
+                  <h4>000</h4>
+                </div>
+                <div class="col-sm-3">
+                  <label>
+                    CPF
+                  </label>
+                  <h4>000.000.000-00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section title="dados-triagem" class="cadastro-section">
+        <div class="row divider-bottom">
+          <div class="col-sm-12">
+            <h4 class="text-upper mt-md">
+              <a href="#dados-triagem" data-toggle="collapse" aria-controls="dados-triagem"
+                 expanded="false" class="darkblue-mv"> <strong>Dados da triagem</strong></a>
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="dados-triagem" class="collapse">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="checkbox">
+                    <label class="text-red">
+                      <input type="checkbox" class="mt-md"> <strong class="mt-0">Paciente com atendimento
+                      domiciliar</strong>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-md">
+                <div class="col-sm-6">
+                  <label>Classificação de risco</label>
+                  <div class="clearfix">
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-lg btn-primary">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Baixo
+                      </label>
+                      <label class="btn btn-lg btn-success">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Moderado
+                      </label>
+                      <label class="btn btn-lg btn-warning">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Grave
+                      </label>
+                      <label class="btn btn-lg btn-danger">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Urgente
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label>Especialidade</label>
+                  <div class="input-group input-voice-btn">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-voice"></button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-md">
+                <div class="col-sm-6">
+                  <label>Queixa do paciente</label>
+                  <div class="input-group input-voice-btn">
+                    <textarea class="form-control" rows="13"></textarea>
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label>Pressão sistólica</label>
+                      <div class="input-group input-voice-btn">
+                        <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label>Pressão dóstica</label>
+                      <div class="input-group input-voice-btn">
+                        <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-md">
+                    <div class="col-sm-6">
+                      <label>Temperatura</label>
+                      <div class="input-group input-voice-btn">
+                        <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label>Pulso</label>
+                      <div class="input-group input-voice-btn">
+                        <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-md">
+                    <div class="col-sm-12">
+                      <label>Altura</label>
+                      <div class="input-group input-voice-btn">
+                        <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-md">
+                <div class="col-sm-4">
+                  <label>Peso</label>
+                  <div class="input-group input-voice-btn">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <label>Frequência</label>
+                  <div class="input-group input-voice-btn">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <label>Glicemia</label>
+                  <div class="input-group input-voice-btn">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Finaliza o conteúdo central -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a>
+        </li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="text-right">
+          <a href="javascript::;" data-toggle="control-sidebar" class="text-white"><i
+                  class="ion-ios-close-outline fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="tab-pane active" id="control-sidebar-home-tab">
+          <h4>Resultado da busca</h4>
+          <p>Foram encontrados <strong>5</strong> resultados</p>
+          <ul class="control-sidebar-menu">
+            <li class="divider-bottom">
+              <a href="#" class="text-white">
+                <span class="h4">Resultado A</span><br>
+                <small>Detalhamento do resultado</small>
+              </a>
+            </li>
+            <li class="divider-bottom">
+              <a href="#" class="text-white">
+                <span class="h4">Resultado B</span><br>
+                <small>Detalhamento do resultado</small>
+              </a>
+            </li>
+            <li class="divider-bottom">
+              <a href="#" class="text-white">
+                <span class="h4">Resultado C</span><br>
+                <small>Detalhamento do resultado</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <div class="mv-fixed-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-mv btn-mv-green btn-lg uppercase">Salvar</button>
+        </div>
+        <div class="col-sm-6 text-right">
+          <p class="text-white fontsize-sm mt-0 mb-0">
+            <img src="app/img/icons/voice-touch-w-sm.png" class="img-adaptative"> Para gravar, pressione o
+            ícone nos campos
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
