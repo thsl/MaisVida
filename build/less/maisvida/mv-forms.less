@@ -7,9 +7,11 @@
   border: 1px solid #B7B7B7;
   margin: 0;
   height: 62px;
+  &:focus {
+    border-color: #0076FF;
+  }
 
   &:focus + .input-group-btn .btn {
-    border: 0;
     border-color: #0076FF;
     color: @mv-color-darkblue;
 
@@ -71,7 +73,10 @@
       border: 0;
     }
   }
-  .btn-voice{
+  .btn-voice {
     background: url("@{img-path-mv}/icons/voice-c.png") no-repeat center center;
+    &:focus {
+      background: url("@{img-path-mv}/icons/voice-md-c-active.gif") no-repeat center center;
+    }
   }
 }

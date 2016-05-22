@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en" ng-app="mais-vida">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <title>Mais Vida</title>
+
+  <link rel="stylesheet" href="include/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="include/admin-lte/css/AdminLTE.css">
+  <link rel="stylesheet" href="app/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app/css/ionicons.css">
+  <link rel="stylesheet" href="app/css/maisvida.css">
+  <link rel="stylesheet" href="include/admin-lte/plugins/fullcalendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="include/admin-lte/plugins/iCheck/flat/blue.css">
+
+
+  <script src="include/jquery/jquery.js"></script>
+  <script src="include/bootstrap/js/bootstrap.min.js"></script>
+  <script src="include/admin-lte/js/app.min.js"></script>
+  <!-- script src="include/angular/angular.js"></script>
+  <script src="include/angular/animate/angular-animate.js"></script>
+  <script src="include/angular/route/angular-route.js"></script>
+  <script src="include/angular/resource/angular-resource.js"></script> -->
+  <script src="include/admin-lte/plugins/iCheck/icheck.min.js"></script>
+  <script src="app/js/interface.js"></script>
+  <!-- script src="app/js/app.js"></script>
+  <script src="app/js/animations.js"></script>
+  <script src="app/js/controllers.js"></script>
+  <script src="app/js/filters.js"></script>
+  <script src="app/js/services.js"></script> -->
+</head>
+
+<body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
+
+<div class="wrapper">
+
+
+  <header class="main-header">
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+    <a href="#" class="logo">
+            <span class="logo-lg"><img src="app/img/logos/logo-maisvida-w-md.png"
+                                       class="img-adaptative"></span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="back-btn">
+        <span class="sr-only">Voltar</span>
+      </a>
+      <div class="navbar-custom-menu">
+        <form action="#" method="get" class="header-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Toque para buscar">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat" data-toggle="control-sidebar">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+          </div>
+        </form>
+      </div>
+      <a href="#" type="button" class="btn voice-btn text-center pull-right" data-toggle="button"
+         aria-pressed="false" autocomplete="off">
+        <img src="app/img/icons/voice-w.png" class="img-adaptative">
+        <br>Comandos de voz
+      </a>
+      <a href="#" class="btn btn-header pull-right has-alert">
+        <span class="ball-alert">1</span>
+        <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i><br>Alertas
+      </a>
+      <a href="#" class="btn btn-header pull-right has-alert">
+        <span class="ball-alert">1</span>
+        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><br>E-mails
+      </a>
+    </nav>
+  </header>
+  <aside class="main-sidebar">
+    <section class="sidebar">
+      <div class="user-panel">
+        <div class="pull-left image ml-sm">
+          <img src="app/img/icons/generic-user.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info ml-sm">
+          <p>Alexander Pierce</p>
+          <a href="#">Recepção HRT</a>
+        </div>
+      </div>
+      <ul class="sidebar-menu">
+        <li class="active"><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>
+          <span>Novo paciente</span></a></li>
+        <li><a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i> <span>Acolhimento</span></a></li>
+        <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> <span>Atividades</span></a></li>
+        <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chat</span></a></li>
+        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Logout</span></a></li>
+      </ul>
+    </section>
+  </aside>
+  <!-- inicia o conteúdo central -->
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <section class="content-header">
+        <h1>
+          Mailbox
+          <small>13 new messages</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li class="active">Mailbox</li>
+        </ol>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="mailbox.html" class="btn btn-primary btn-block margin-bottom">Back to Inbox</a>
+            <div class="box box-solid">
+              <div class="box-header with-border">
+                <h3 class="box-title">Folders</h3>
+                <div class="box-tools">
+                  <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
+              </div>
+              <div class="box-body no-padding">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="mailbox.html"><i class="fa fa-inbox"></i> Inbox <span
+                          class="label label-primary pull-right">12</span></a></li>
+                  <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
+                  <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
+                  <li><a href="#"><i class="fa fa-filter"></i> Junk <span
+                          class="label label-warning pull-right">65</span></a></li>
+                  <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+                </ul>
+              </div><!-- /.box-body -->
+            </div><!-- /. box -->
+            <div class="box box-solid">
+              <div class="box-header with-border">
+                <h3 class="box-title">Labels</h3>
+                <div class="box-tools">
+                  <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                </div>
+              </div><!-- /.box-header -->
+              <div class="box-body no-padding">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#"><i class="fa fa-circle-o text-red"></i> Important</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
+                </ul>
+              </div><!-- /.box-body -->
+            </div><!-- /.box -->
+          </div><!-- /.col -->
+          <div class="col-md-9">
+            <div class="box box-primary">
+              <div class="box-header with-border">
+                <h3 class="box-title">Compose New Message</h3>
+              </div><!-- /.box-header -->
+              <div class="box-body">
+                <div class="form-group">
+                  <input class="form-control" placeholder="To:">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Subject:">
+                </div>
+                <div class="form-group">
+                    <textarea id="compose-textarea" class="form-control" style="height: 300px">
+                      <h1><u>Heading Of Message</u></h1>
+                      <h4>Subheading</h4>
+                      <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system, and expound the actual teachings
+                        of the great explorer of the truth, the master-builder of human happiness. No one rejects,
+                        dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know
+                        how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again
+                        is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
+                        but because occasionally circumstances occur in which toil and pain can procure him some great
+                        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
+                        except to obtain some advantage from it? But who has any right to find fault with a man who
+                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                        produces no resultant pleasure? On the other hand, we denounce with righteous indignation and
+                        dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                        blinded by desire, that they cannot foresee</p>
+                      <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                        <li>List item four</li>
+                      </ul>
+                      <p>Thank you,</p>
+                      <p>John Doe</p>
+                    </textarea>
+                </div>
+                <div class="form-group">
+                  <div class="btn btn-default btn-file">
+                    <i class="fa fa-paperclip"></i> Attachment
+                    <input type="file" name="attachment">
+                  </div>
+                  <p class="help-block">Max. 32MB</p>
+                </div>
+              </div><!-- /.box-body -->
+              <div class="box-footer">
+                <div class="pull-right">
+                  <button class="btn btn-default"><i class="fa fa-pencil"></i> Draft</button>
+                  <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i> Send</button>
+                </div>
+                <button class="btn btn-default"><i class="fa fa-times"></i> Discard</button>
+              </div><!-- /.box-footer -->
+            </div><!-- /. box -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </section><!-- /.content -->
+    </div>
+
+  </div>
+  <!-- Finaliza o conteúdo central -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="text-right">
+        <a href="javascript::;" data-toggle="control-sidebar" class="text-white"><i
+                class="ion-ios-close-outline fa-2x" aria-hidden="true"></i></a>
+      </div>
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+        <h4>Resultado da busca</h4>
+        <p>Foram encontrados <strong>5</strong> resultados</p>
+        <ul class="control-sidebar-menu">
+          <li class="divider-bottom">
+            <a href="#" class="text-white">
+              <span class="h4">Resultado A</span><br>
+              <small>Detalhamento do resultado</small>
+            </a>
+          </li>
+          <li class="divider-bottom">
+            <a href="#" class="text-white">
+              <span class="h4">Resultado B</span><br>
+              <small>Detalhamento do resultado</small>
+            </a>
+          </li>
+          <li class="divider-bottom">
+            <a href="#" class="text-white">
+              <span class="h4">Resultado C</span><br>
+              <small>Detalhamento do resultado</small>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+  <div class="control-sidebar-bg"></div>
+</div>
+<script>
+  $(function () {
+    //Enable iCheck plugin for checkboxes
+    //iCheck for checkbox and radio inputs
+    $('.mailbox-messages input[type="checkbox"]').iCheck({
+      checkboxClass: 'icheckbox_flat-blue',
+      radioClass: 'iradio_flat-blue'
+    });
+
+    //Enable check and uncheck all functionality
+    $(".checkbox-toggle").click(function () {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+        //Uncheck all checkboxes
+        $(".mailbox-messages input[type='checkbox']").iCheck("uncheck");
+        $(".fa", this).removeClass("fa-check-square-o").addClass('fa-square-o');
+      } else {
+        //Check all checkboxes
+        $(".mailbox-messages input[type='checkbox']").iCheck("check");
+        $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
+      }
+      $(this).data("clicks", !clicks);
+    });
+
+    //Handle starring for glyphicon and font awesome
+    $(".mailbox-star").click(function (e) {
+      e.preventDefault();
+      //detect type
+      var $this = $(this).find("a > i");
+      var glyph = $this.hasClass("glyphicon");
+      var fa = $this.hasClass("fa");
+
+      //Switch states
+      if (glyph) {
+        $this.toggleClass("glyphicon-star");
+        $this.toggleClass("glyphicon-star-empty");
+      }
+
+      if (fa) {
+        $this.toggleClass("fa-star");
+        $this.toggleClass("fa-star-o");
+      }
+    });
+  });
+</script>
+</body>
+
+</html>

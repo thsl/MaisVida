@@ -13,25 +13,31 @@
   <link rel="stylesheet" href="app/css/ionicons.css">
   <link rel="stylesheet" href="app/css/maisvida.css">
 
+
   <script src="include/jquery/jquery.js"></script>
   <script src="include/bootstrap/js/bootstrap.min.js"></script>
   <script src="include/admin-lte/js/app.min.js"></script>
   <!-- script src="include/angular/angular.js"></script>
   <script src="include/angular/animate/angular-animate.js"></script>
   <script src="include/angular/route/angular-route.js"></script>
-  <script src="include/angular/resource/angular-resource.js"></script -->
+  <script src="include/angular/resource/angular-resource.js"></script> -->
 
-  <script src="app/js/core.js"></script>
+  <script src="app/js/interface.js"></script>
   <!-- script src="app/js/app.js"></script>
   <script src="app/js/animations.js"></script>
   <script src="app/js/controllers.js"></script>
   <script src="app/js/filters.js"></script>
-  <script src="app/js/services.js"></script -->
+  <script src="app/js/services.js"></script> -->
 </head>
 
 <body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
-  
+
 <div class="container">
+  <style>
+    body{
+      background-color: #fff;
+    }
+  </style>
   <header>
     <div class="row divider-bottom text-center pt-md">
       <img src="app/img/logos/logo-maisvida-c-md.png">
@@ -80,11 +86,35 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 text-center pt-lg pb-lg">
+        <div class="clearfix">
+          <div class="col-sm-6 text-center pt-lg pb-lg">
             <p><img src="app/img/icons/voice-md-w.png" class="img-adaptative"></p>
             <p>Ouvindo sua voz, diga seu nome<br>
               e o nome da sua mãe</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="mt-md">
+              <label>Seu nome</label>
+              <div class="input-group input-voice-btn">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+              </div>
+            </div>
+            <div class="mt-md">
+              <label>Nome da sua mãe</label>
+              <div class="input-group input-voice-btn">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

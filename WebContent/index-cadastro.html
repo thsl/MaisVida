@@ -19,14 +19,14 @@
   <!-- script src="include/angular/angular.js"></script>
   <script src="include/angular/animate/angular-animate.js"></script>
   <script src="include/angular/route/angular-route.js"></script>
-  <script src="include/angular/resource/angular-resource.js"></script -->
+  <script src="include/angular/resource/angular-resource.js"></script> -->
 
-  <script src="app/js/core.js"></script>
+  <script src="app/js/interface.js"></script>
   <!-- script src="app/js/app.js"></script>
   <script src="app/js/animations.js"></script>
   <script src="app/js/controllers.js"></script>
   <script src="app/js/filters.js"></script>
-  <script src="app/js/services.js"></script -->
+  <script src="app/js/services.js"></script> -->
 </head>
 
 <body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
@@ -57,9 +57,18 @@
           </div>
         </form>
       </div>
-      <a href="#" class="voice-btn text-center pull-right">
+      <a href="#" type="button" class="btn voice-btn text-center pull-right" data-toggle="button"
+         aria-pressed="false" autocomplete="off">
         <img src="app/img/icons/voice-w.png" class="img-adaptative">
         <br>Comandos de voz
+      </a>
+      <a href="#" class="btn btn-header pull-right has-alert">
+        <span class="ball-alert">1</span>
+        <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i><br>Alertas
+      </a>
+      <a href="#" class="btn btn-header pull-right has-alert">
+        <span class="ball-alert">1</span>
+        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><br>E-mails
       </a>
     </nav>
   </header>
@@ -78,8 +87,6 @@
         <li class="active"><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>
           <span>Novo paciente</span></a></li>
         <li><a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i> <span>Acolhimento</span></a></li>
-        <li class="has-alert"><a class="ball-alert">1</a>
-          <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i><span>Avisos</span></a></li>
         <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> <span>Atividades</span></a></li>
         <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chat</span></a></li>
         <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Logout</span></a></li>
@@ -99,7 +106,7 @@
           <p class="mt-md text-right">Última Atualização 00/00/0000 | Feita por <a><strong>Aline
             Silva</strong></a> <br>
             Possui: <strong class="text-olive">Cadastro biométrico</strong> | <strong
-                    class="text-olive">Reconhecimanto
+                    class="text-olive">Reconhecimento
               vocal</strong></p>
         </div>
       </div>
@@ -117,18 +124,27 @@
             <div id="cadastro-ddspessoais" class="collapse">
               <div class="row mt-md">
                 <div class="col-sm-8">
-                  <div class="form-group">
-                    <label>Nome do paciente</label>
+
+                  <label>Nome do paciente</label>
+                  <div class="input-group input-voice-btn">
+                    <input type="text" class="form-control" placeholder="Nome do paciente">
+                            <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                  </div>
+                  <p><a class="mb-md" role="button" data-toggle="collapse" href="#NomeSocial"
+                        aria-expanded="false" aria-controls="NomeSocial"><i class="fa fa-plus-circle"
+                                                                            aria-hidden="true"></i>
+                    <strong>Adicionar
+                      nome social</strong></a></p>
+                  <div class="collapse mb-md" id="NomeSocial">
+                    <label>Nome social</label>
                     <div class="input-group input-voice-btn">
-                      <input type="text" class="form-control" placeholder="Nome do paciente">
+                      <input type="text" class="form-control" placeholder="Nome social">
                             <span class="input-group-btn">
                               <button type="button" class="btn btn-voice"></button>
                             </span>
                     </div>
-                    <p><a href="#" class="mt-md"><i class="fa fa-plus-circle"
-                                                    aria-hidden="true"></i>
-                      <strong>Adicionar
-                        nome social</strong></a></p>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">

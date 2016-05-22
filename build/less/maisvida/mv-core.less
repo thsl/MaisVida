@@ -376,3 +376,30 @@ h6,
     font-weight : bold;
   }
 }
+
+.has-alert {
+  position: relative;
+  .ball-alert {
+    position: absolute;
+    top: 19px;
+    left: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    background: @red !important;
+    font-size: 11px;
+    z-index: 820;
+    font-weight: 700;
+    padding: 10px;
+    text-indent: -3px;
+    line-height: 0px;
+    a{
+      color: @white;
+    }
+    &:hover{
+      background: #FF0120 !important;
+    }
+  }
+}
