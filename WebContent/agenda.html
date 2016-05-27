@@ -9,7 +9,6 @@
 
   <link rel="stylesheet" href="include/bootstrap-3_3_6/css/bootstrap.min.css">
   <link rel="stylesheet" href="include/admin-lte-2_3_0/css/AdminLTE.css">
-  <link rel="stylesheet" href="include/zabuto-1_2_1/zabuto_calendar.min.css">
   <link rel="stylesheet" href="include/css/font-awesome.min.css">
   <link rel="stylesheet" href="include/css/ionicons.css">
   <link rel="stylesheet" href="app/css/maisvida.css">
@@ -17,19 +16,26 @@
   <script src="include/jquery-2_2_3/jquery.js"></script>
   <script src="include/bootstrap-3_3_6/js/bootstrap.min.js"></script>
   <script src="include/admin-lte-2_3_0/js/app.min.js"></script>
-  <script src="include/zabuto-1_2_1/zabuto_calendar.min.js"></script>
 
   <script src="app/js/interface.js"></script>
-  
-  <script>
-    $(document).ready(function () {
-      $("#calendario-maisvida").zabuto_calendar();
-    });
-  </script>
+
 </head>
 
 <body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
-
+<script src="include/admin-lte-2_3_0/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="include/admin-lte-2_3_0/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js"></script>
+<link rel="stylesheet" href="include/admin-lte-2_3_0/plugins/datepicker/datepicker3.css">
+<link rel="stylesheet" href="include/admin-lte-2_3_0/plugins/datepicker/datepicker-custom-mv.css">
+<script type="text/javascript">
+  // When the document is ready
+  $(document).ready(function () {
+    $('#mv-calendar').datepicker({
+      format: "dd/mm/yyyy",
+      language: "pt-BR",
+      daysOfWeekHighlighted: "3,4,5"
+    });
+  });
+</script>
 <div class="wrapper">
 
 
@@ -99,7 +105,7 @@
       <div class="row divider-bottom mt-lg">
         <div class="col-sm-8">
           <h3 class="text-upper">
-            <strong>Cadastro de paciente</strong>
+            <strong>Agendamento simplificado</strong>
           </h3>
         </div>
         <div class="col-sm-4 fontsize-sm">
@@ -111,52 +117,142 @@
       </div>
       <div class="row mt-md">
         <div class="col-sm-6">
-          <div id="calendario-maisvida"></div>
+          <label>Selecione uma data</label>
+          <div id="mv-calendar"></div>
+        </div>
+        <div class="col-sm-6">
+          <label>Horários disponíveis para 00/00/0000</label>
+          <ul class="list-unstyled">
+            <li class="mt-md">
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <label>Hora</label>
+                </div>
+                <div class="col-sm-9">
+                  <label>Médicos disponíveis</label>
+                </div>
+              </div>
+            </li>
+            <li class="divider-bottom">
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <p class="mt-xl h3">
+                    <strong>
+                      00:00
+                    </strong><br/>
+                    <small>Manhã</small>
+                  </p>
+                </div>
+                <div class="col-sm-9">
+                  <ul class="list-unstyled">
+                    <li>
+                      <div class="box box-success">
+                        <div class="box-header with-border">
+                          <h3 class="box-title"><strong>Dr. Francisco Lucena</strong></h3>
+                        </div>
+                        <div class="box-body">
+                          <p>Lorem ipsum dolor</p>
+                          <p>Endereço: Lorem ipsum dolor</p>
+                        </div><!-- /.box-body -->
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box box-success">
+                        <div class="box-header with-border">
+                          <h3 class="box-title"><strong>Dr. Francisco Lucena</strong></h3>
+                        </div>
+                        <div class="box-body">
+                          <p>Lorem ipsum dolor</p>
+                          <p>Endereço: Lorem ipsum dolor</p>
+                        </div><!-- /.box-body -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="divider-bottom">
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <p class="mt-xl h3">
+                    <strong>
+                      00:00
+                    </strong><br/>
+                    <small>Manhã</small>
+                  </p>
+                </div>
+                <div class="col-sm-9">
+                  <ul class="list-unstyled">
+                    <li>
+                      <div class="box box-success">
+                        <div class="box-header with-border">
+                          <h3 class="box-title"><strong>Dr. Francisco Lucena</strong></h3>
+                        </div>
+                        <div class="box-body">
+                          <p>Lorem ipsum dolor</p>
+                          <p>Endereço: Lorem ipsum dolor</p>
+                        </div><!-- /.box-body -->
+                      </div>
+                    </li>
+                    <li>
+                      <div class="box box-success">
+                        <div class="box-header with-border">
+                          <h3 class="box-title"><strong>Dr. Francisco Lucena</strong></h3>
+                        </div>
+                        <div class="box-body">
+                          <p>Lorem ipsum dolor</p>
+                          <p>Endereço: Lorem ipsum dolor</p>
+                        </div><!-- /.box-body -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-
+    <!-- Finaliza o conteúdo central -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="text-right">
+          <a href="javascript::;" data-toggle="control-sidebar" class="text-white"><i
+                  class="ion-ios-close-outline fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="tab-pane active" id="control-sidebar-home-tab">
+          <h4>Resultado da busca</h4>
+          <p>Foram encontrados <strong>5</strong> resultados</p>
+          <ul class="control-sidebar-menu">
+            <li class="divider-bottom">
+              <a href="#" class="text-white">
+                <span class="h4">Resultado A</span><br>
+                <small>Detalhamento do resultado</small>
+              </a>
+            </li>
+            <li class="divider-bottom">
+              <a href="#" class="text-white">
+                <span class="h4">Resultado B</span><br>
+                <small>Detalhamento do resultado</small>
+              </a>
+            </li>
+            <li class="divider-bottom">
+              <a href="#" class="text-white">
+                <span class="h4">Resultado C</span><br>
+                <small>Detalhamento do resultado</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <div class="control-sidebar-bg"></div>
   </div>
-  <!-- Finaliza o conteúdo central -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
-    <div class="tab-content">
-      <div class="text-right">
-        <a href="javascript::;" data-toggle="control-sidebar" class="text-white"><i
-                class="ion-ios-close-outline fa-2x" aria-hidden="true"></i></a>
-      </div>
-      <div class="tab-pane active" id="control-sidebar-home-tab">
-        <h4>Resultado da busca</h4>
-        <p>Foram encontrados <strong>5</strong> resultados</p>
-        <ul class="control-sidebar-menu">
-          <li class="divider-bottom">
-            <a href="#" class="text-white">
-              <span class="h4">Resultado A</span><br>
-              <small>Detalhamento do resultado</small>
-            </a>
-          </li>
-          <li class="divider-bottom">
-            <a href="#" class="text-white">
-              <span class="h4">Resultado B</span><br>
-              <small>Detalhamento do resultado</small>
-            </a>
-          </li>
-          <li class="divider-bottom">
-            <a href="#" class="text-white">
-              <span class="h4">Resultado C</span><br>
-              <small>Detalhamento do resultado</small>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </aside>
-  <div class="control-sidebar-bg"></div>
 </div>
-
 </body>
 
 </html>
