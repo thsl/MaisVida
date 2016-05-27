@@ -24,6 +24,4 @@ $(document).ready(function () {
         }
         e.stopPropagation();
     });
-// inicia a treeview
-    $('.treeview').treeView();
 });
