@@ -1,16 +1,25 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" ng-app="mvApp">
+
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mais Vida</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <title>Mais Vida</title>
+
   <link rel="stylesheet" href="include/bootstrap-3_3_6/css/bootstrap.min.css">
   <link rel="stylesheet" href="include/admin-lte-2_3_0/css/AdminLTE.css">
-  <link rel="stylesheet" href="include/css/font-awesome.min.css">
-  <link rel="stylesheet" href="include/css/ionicons.css">
+  <link rel="stylesheet" href="app/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app/css/ionicons.css">
   <link rel="stylesheet" href="app/css/maisvida.css">
+
+  <script src="include/jquery-2_2_3/jquery.js"></script>
+  <script src="include/bootstrap-3_3_6/js/bootstrap.min.js"></script>
+  <script src="include/admin-lte-2_3_0/js/app.min.js"></script>
+
+  <script src="app/js/interface.js"></script>
 </head>
+
 <body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
 <div class="wrapper">
 
@@ -38,9 +47,18 @@
           </div>
         </form>
       </div>
-      <a href="#" class="voice-btn text-center pull-right">
+      <a href="#" type="button" class="btn voice-btn text-center pull-right" data-toggle="button"
+         aria-pressed="false" autocomplete="off">
         <img src="app/img/icons/voice-w.png" class="img-adaptative">
         <br>Comandos de voz
+      </a>
+      <a href="#" class="btn btn-header pull-right has-alert">
+        <span class="ball-alert">1</span>
+        <i class="fa fa-bell-o fa-2x" aria-hidden="true"></i><br>Alertas
+      </a>
+      <a href="#" class="btn btn-header pull-right has-alert">
+        <span class="ball-alert">1</span>
+        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><br>E-mails
       </a>
     </nav>
   </header>
@@ -59,8 +77,6 @@
         <li class="active"><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>
           <span>Novo paciente</span></a></li>
         <li><a href="#"><i class="fa fa-heartbeat" aria-hidden="true"></i> <span>Acolhimento</span></a></li>
-        <li class="has-alert"><a class="ball-alert">1</a>
-          <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i><span>Avisos</span></a></li>
         <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> <span>Atividades</span></a></li>
         <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chat</span></a></li>
         <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Logout</span></a></li>
@@ -104,7 +120,7 @@
                   <label>
                     Nome do paciente
                   </label>
-                  <h2>Paulo Henrique Silveira</h2>
+                  <h4>Paulo Henrique Silveira</h4>
                 </div>
                 <div class="col-sm-1">
                   <label>
@@ -352,10 +368,8 @@
       </div>
     </div>
   </div>
+</div>
 
-  <script src="include/jquery-2_2_3/jquery.js"></script>
-  <script src="include/bootstrap-3_3_6/js/bootstrap.min.js"></script>
-  <script src="include/admin-lte-2_3_0/js/app.min.js"></script>
-  <script src="app/js/interface.js"></script>
 </body>
+
 </html>

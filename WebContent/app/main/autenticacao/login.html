@@ -1,5 +1,10 @@
 <div class="container">
   <script src="app/main/autenticacao/autenticacao.js"></script>
+  <style>
+    body{
+      background-color: #fff;
+    }
+  </style>
   <header>
     <div class="row divider-bottom text-center pt-md">
       <img src="app/img/logos/logo-maisvida-c-md.png">
@@ -48,11 +53,35 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 text-center pt-lg pb-lg">
+        <div class="clearfix">
+          <div class="col-sm-6 text-center pt-lg pb-lg">
             <p><img src="app/img/icons/voice-md-w.png" class="img-adaptative"></p>
             <p>Ouvindo sua voz, diga seu nome<br>
               e o nome da sua mãe</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="mt-md">
+              <label>Seu nome</label>
+              <div class="input-group input-voice-btn">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+              </div>
+            </div>
+            <div class="mt-md">
+              <label>Nome da sua mãe</label>
+              <div class="input-group input-voice-btn">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,5 +145,8 @@
       </div>
     </div>
   </div>
-
 </div>
+
+</body>
+
+</html>

@@ -1,18 +1,34 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" ng-app="mvApp">
+
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mais Vida</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <title>Mais Vida</title>
+
   <link rel="stylesheet" href="include/bootstrap-3_3_6/css/bootstrap.min.css">
   <link rel="stylesheet" href="include/admin-lte-2_3_0/css/AdminLTE.css">
-  <link rel="stylesheet" href="include/css/font-awesome.min.css">
-  <link rel="stylesheet" href="include/css/ionicons.css">
+  <link rel="stylesheet" href="app/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app/css/ionicons.css">
   <link rel="stylesheet" href="app/css/maisvida.css">
+
+
+  <script src="include/jquery-2_2_3/jquery.js"></script>
+  <script src="include/bootstrap-3_3_6/js/bootstrap.min.js"></script>
+  <script src="include/admin-lte-2_3_0/js/app.min.js"></script>
+
+  <script src="app/js/interface.js"></script>
 </head>
-<body class="hold-transition skin-maisvida">
+
+<body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
+
 <div class="container">
+  <style>
+    body{
+      background-color: #fff;
+    }
+  </style>
   <header>
     <div class="row divider-bottom text-center pt-md">
       <img src="app/img/logos/logo-maisvida-c-md.png">
@@ -61,11 +77,35 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3 text-center pt-lg pb-lg">
+        <div class="clearfix">
+          <div class="col-sm-6 text-center pt-lg pb-lg">
             <p><img src="app/img/icons/voice-md-w.png" class="img-adaptative"></p>
             <p>Ouvindo sua voz, diga seu nome<br>
               e o nome da sua mãe</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="mt-md">
+              <label>Seu nome</label>
+              <div class="input-group input-voice-btn">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+              </div>
+            </div>
+            <div class="mt-md">
+              <label>Nome da sua mãe</label>
+              <div class="input-group input-voice-btn">
+                <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <span class="input-group-btn">
+                              <button type="button" class="btn btn-voice"></button>
+                            </span>
+                    </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -131,9 +171,6 @@
   </div>
 </div>
 
-<script src="include/jquery-2_2_3/jquery.js"></script>
-<script src="include/bootstrap-3_3_6/js/bootstrap.min.js"></script>
-<script src="include/admin-lte-2_3_0/js/app.min.js"></script>
-<script src="app/js/interface.js"></script>
 </body>
+
 </html>

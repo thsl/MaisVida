@@ -12,12 +12,20 @@
   <link rel="stylesheet" href="app/css/font-awesome.min.css">
   <link rel="stylesheet" href="app/css/ionicons.css">
   <link rel="stylesheet" href="app/css/maisvida.css">
+  <link rel="stylesheet" href="include/zabuto/zabuto_calendar.min.css">
 
   <script src="include/jquery-2_2_3/jquery.js"></script>
   <script src="include/bootstrap-3_3_6/js/bootstrap.min.js"></script>
   <script src="include/admin-lte-2_3_0/js/app.min.js"></script>
+  <script src="include/zabuto/zabuto_calendar.min.js"></script>
 
   <script src="app/js/interface.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+      $("#calendario-maisvida").zabuto_calendar();
+    });
+  </script>
 </head>
 
 <body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
@@ -101,92 +109,9 @@
               vocal</strong></p>
         </div>
       </div>
-      <div class="row text-center mt-lg">
-        <div class="col-md-3 col-sm-4 col-md-offset-1 mt-md">
-          <button type="button" class="btn btn-primary btn-md uppercase height-grid-2 btn-mv btn-mv-green">
-            <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i><br>
-            Cadastrar <br> novo paciente
-          </button>
-        </div>
-        <div class="col-md-3 col-sm-4 mt-md">
-          <button type="button" class="btn btn-primary btn-md uppercase height-grid-2 btn-mv btn-mv-green">
-            <i class="fa fa-user-md fa-2x" aria-hidden="true"></i><br>
-            Cadastrar novo <br> profissional de saúde
-          </button>
-        </div>
-        <div class="col-md-3 col-sm-4 mt-md">
-          <button type="button" class="btn btn-primary btn-md uppercase height-grid-2 btn-mv btn-mv-green">
-            <i class="fa fa-calendar fa-2x" aria-hidden="true"></i><br>
-            Agenda
-          </button>
-        </div>
-      </div>
-      <div class="row mt-xl">
-        <div class="col-sm-12">
-          <div class="tab-list nav-tabs-one">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#primary" aria-controls="primary" role="tab" data-toggle="tab">Pacientes em
-                  atendimento</a>
-              </li>
-              <li role="presentation">
-                <a href="#second" aria-controls="second" role="tab" data-toggle="tab">Pacientes aguardando
-                  atendimento</a>
-              </li>
-              <li role="presentation">
-                <a href="#third" aria-controls="third" role="tab" data-toggle="tab">Todos</a>
-              </li>
-            </ul>
-            <!-- Tab listagens -->
-            <div class="tab-content table-responsive">
-              <div role="tabpanel" class="tab-pane active" id="primary">
-                <table class="table table-striped">
-                  <thead>
-                  <tr>
-                    <th>Hora</th>
-                    <th>Paciente</th>
-                    <th>Atendimento</th>
-                    <th>Status</th>
-                    <th>Classificação de risco</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <th scope="row">00:00</th>
-                    <td><img src="app/img/icons/generic-user-sm.jpg" class="img-circle">
-                      Lorem ipsum
-                    </td>
-                    <td>Otto</td>
-                    <td>
-                      <p><span class="text-line-through">@mdo <i class="fa fa-check" aria-hidden="true"></i></span></p>
-                      <p><span class="text-line-through">ipsum <i class="fa fa-check" aria-hidden="true"></i></span></p>
-                    </td>
-                    <td><p class="text-upper text-success"><strong>Normal</strong></p></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">00:00</th>
-                    <td>Jacob</td>
-                    <td><strong class="text-danger">Domiciliar</strong></td>
-                    <td>@fat</td>
-                    <td><p class="text-upper text-danger"><strong>Urgente</strong></p></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">00:00</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@mdo</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div role="tabpanel" class="tab-pane" id="second">Segundo</div>
-              <div role="tabpanel" class="tab-pane" id="third">Terceiro</div>
-
-            </div>
-          </div>
+      <div class="row mt-md">
+        <div class="col-sm-6">
+          <div id="calendario-maisvida"></div>
         </div>
       </div>
     </div>
