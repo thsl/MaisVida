@@ -1,6 +1,4 @@
-<<div class="container">
-  <script src="app/main/autenticacao/autenticacao.js"></script>
-
+<div class="container">
   <style>
     body{
       background-color: #fff;
@@ -8,7 +6,7 @@
   </style>
   <header>
     <div class="row divider-bottom text-center pt-md">
-      <img src="app/img/logos/logo-maisvida-c-md.png">
+      <img ng-src="app/img/logos/logo-maisvida-c-md.png">
     </div>
   </header>
   <div class="login text-center">
@@ -18,18 +16,18 @@
         <div class="col-sm-5">
           <div class="round-button" data-toggle="modal" data-target="#Modal-Login-Voz">
             <a class="" href="#">
-              <img src="app/img/icons/voice-md-w.png" class="img-adaptative">
+              <img ng-src="app/img/icons/voice-md-w.png" class="img-adaptative">
             </a>
           </div>
           <p class="mt-lg">
-            <img class="img-adaptative mr-md" src="app/img/icons/finger-sm-gray.png"> Toque e fale
+            <img class="img-adaptative mr-md" ng-src="app/img/icons/finger-sm-gray.png"> Toque e fale
           </p>
         </div>
         <div class="col-sm-2"><p class="text-center h3 mt-lg pt-xl">ou</p></div>
         <div class="col-sm-5">
           <div class="round-button" data-toggle="modal" data-target="#Modal-Login-Digital">
             <a class="" href="#">
-              <img src="app/img/icons/hand-md-w.png" class="img-adaptative">
+              <img ng-src="app/img/icons/hand-md-w.png" class="img-adaptative">
             </a>
           </div>
           <p class="mt-xl">Utilize o identificador
@@ -56,7 +54,7 @@
       <div class="modal-body">
         <div class="clearfix">
           <div class="col-sm-6 text-center pt-lg pb-lg">
-            <p><img src="app/img/icons/voice-md-w.png" class="img-adaptative"></p>
+            <p><img ng-src="app/img/icons/voice-md-w.png" class="img-adaptative"></p>
             <p>Ouvindo sua voz, diga seu nome<br>
               e o nome da sua mãe</p>
           </div>
@@ -98,7 +96,7 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3 text-center pt-lg pb-lg">
-            <p><img src="app/img/icons/hand-md-w.png" class="img-adaptative"></p>
+            <p><img ng-src="app/img/icons/hand-md-w.png" class="img-adaptative"></p>
             <p>Identificando sua digital, aguarde alguns instantes</p>
           </div>
         </div>
@@ -147,7 +145,3 @@
     </div>
   </div>
 </div>
-
-</body>
-
-</html>
