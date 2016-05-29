@@ -14,7 +14,7 @@ $(document).ready(function () {
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero: true
                     }
                 }]
             }
@@ -34,13 +34,10 @@ $(document).ready(function () {
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero:true
+                        beginAtZero: true
                     }
                 }]
             }
         }
     });
-
-// inicia a treeview
-    $('.treeview').treeView();
 });
