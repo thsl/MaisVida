@@ -3,125 +3,6 @@
  *   Author: Thiago Lopes
  *	 Website: thslopes.com.bron
 !*/
-/* ---- Proxima nova
-@font-face {
-  font-family: 'Proxima';
-  font-weight: normal;
-  src: url('@{proxima-font-path}/proximanova-regular-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-regular-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-regular-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-regular-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-regular-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-@font-face {
-  font-family: 'Proxima';
-  font-style: italic;
-  font-weight: normal;
-  src: url('@{proxima-font-path}/proximanova-regitalic-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-regitalic-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-regitalic-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-regitalic-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-regitalic-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 300;
-  src: url('@{proxima-font-path}/proximanova-light-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-light-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-light-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-light-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-light-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 600;
-  src: url('@{proxima-font-path}/proximanova-semibold-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-semibold-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-semibold-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-semibold-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-semibold-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 600;
-  font-style: italic;
-  src: url('@{proxima-font-path}/proximanova-semibolditalic-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-semibolditalic-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-semibolditalic-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-semibolditalic-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 700;
-  src: url('@{proxima-font-path}/proximanova-bold-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-bold-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-bold-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-bold-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-bold-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 700;
-  font-style: italic;
-  src: url('@{proxima-font-path}/proximanova-boldit-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-boldit-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-boldit-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-boldit-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-boldit-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-@font-face {
-  font-family: 'Proxima';
-  font-weight: 900;
-  src: url('@{proxima-font-path}/proximanova-extrabold-webfont.eot?1307578394');
-  src: url('@{proxima-font-path}/proximanova-extrabold-webfont.eot?iefix') format('eot'),
-  url('@{proxima-font-path}/proximanova-extrabold-webfont.woff?1307578394') format('woff'),
-  url('@{proxima-font-path}/proximanova-extrabold-webfont.ttf?1307578394') format('truetype'),
-  url('@{proxima-font-path}/proximanova-extrabold-webfont.svg#webfont2rpW2ohz') format('svg')
-}
-
-
-@font-face {
-  font-family: "Ionicons";
-  src: url('@{font-path}/@{ionicons-font-path}/ionicons.eot');
-  src: url('@{font-path}/@{ionicons-font-path}/ionicons.eot#iefix') format('embedded-opentype'),
-  url('@{font-path}/@{ionicons-font-path}/ionicons.ttf') format('truetype'),
-  url('@{font-path}/@{ionicons-font-path}/ionicons.woff') format('woff'),
-  url('@{font-path}/@{ionicons-font-path}/ionicons.svg#Ionicons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('@{font-path}/@{font-boots-path}/glyphicons-halflings-regular.eot');
-  src: url('@{font-path}/@{font-boots-path}/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-  url('@{font-path}/@{font-boots-path}/glyphicons-halflings-regular.woff2') format('woff2'),
-  url('@{font-path}/@{font-boots-path}/glyphicons-halflings-regular.woff') format('woff'),
-  url('@{font-path}/@{font-boots-path}/glyphicons-halflings-regular.ttf') format('truetype'),
-  url('@{font-path}/@{font-boots-path}/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
-}
-
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('@{font-path}/@{fontawsome-font-path}/fontawesome-webfont.eot?');
-  src: url('@{font-path}/@{fontawsome-font-path}/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-  url('@{font-path}/@{fontawsome-font-path}/fontawesome-webfont.woff2') format('woff2'),
-  url('@{font-path}/@{fontawsome-font-path}/fontawesome-webfont.woff') format('woff'),
-  url('@{font-path}/@{fontawsome-font-path}/fontawesome-webfont.ttf') format('truetype'),
-  url('@{font-path}/@{fontawsome-font-path}/fontawesome-webfont.svg#fontawesomeregular') format('svg');
-  // src: url('@{fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
-  font-weight: normal;
-  font-style: normal;
-}*/
 @font-face {
   font-family: 'sinkin';
   src: url('../../include/sinkinsans/SinkinSans-300Light-webfont.eot');
@@ -150,8 +31,27 @@
   font-weight: 700;
   font-style: italic;
 }
+@font-face {
+  font-family: "Ionicons";
+  src: url('../../include/ionicons-2_0_1/fonts/ionicons.eot');
+  src: url('../../include/ionicons-2_0_1/fonts/ionicons.eot#iefix') format('embedded-opentype'), url('../../include/ionicons-2_0_1/fonts/ionicons.ttf') format('truetype'), url('../../include/ionicons-2_0_1/fonts/ionicons.woff') format('woff'), url('../../include/ionicons-2_0_1/fonts/ionicons.svg#Ionicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../include/bootstrap-3_3_6/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../include/bootstrap-3_3_6/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../include/bootstrap-3_3_6/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../include/bootstrap-3_3_6/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../include/bootstrap-3_3_6/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../include/bootstrap-3_3_6/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../include//font-awesome-4_6_3/fonts/fontawesome-webfont.eot?');
+  src: url('../../include//font-awesome-4_6_3/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../../include//font-awesome-4_6_3/fonts/fontawesome-webfont.woff2') format('woff2'), url('../../include//font-awesome-4_6_3/fonts/fontawesome-webfont.woff') format('woff'), url('../../include//font-awesome-4_6_3/fonts/fontawesome-webfont.ttf') format('truetype'), url('../../include//font-awesome-4_6_3/fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   font-size: 15px;
   letter-spacing: -0.02em;
@@ -169,7 +69,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: -0.02em;
   margin: 0;
   padding: 0;
@@ -1011,7 +911,7 @@ h6,
 }
 .main-header .logo {
   padding: 10px;
-  font-family: "Proxima", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   height: 90px;
   min-height: 90px;
   width: 188px;
