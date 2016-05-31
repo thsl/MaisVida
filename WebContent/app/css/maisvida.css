@@ -1169,6 +1169,26 @@ h6,
 .main-header .btn-header.btn-sound.active .fa-volume-up:before {
   content: "\f026";
 }
+.main-header .btn-sound {
+  float: left;
+  background-color: #00a69c;
+  color: #ffffff;
+  border-right: 1px solid #fff;
+}
+.main-header .btn-sound:hover {
+  color: #fff;
+  background-color: #00d9cc;
+}
+.main-header .btn-sound.active {
+  color: #fff;
+  background-color: #eaeaec;
+}
+@media (max-width: 768px) {
+  .main-header .btn-sound {
+    width: 50%;
+    font-size: 11px;
+  }
+}
 /*
  * Skin: Blue
  * ----------
