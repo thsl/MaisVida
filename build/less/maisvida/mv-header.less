@@ -150,4 +150,23 @@
   .btn-header.btn-sound.active .fa-volume-up:before {
     content: "\f026";
   }
+
+  .btn-sound {
+    float: left;
+    background-color: @mv-color-green;
+    color: @white;
+    border-right: 1px solid #fff;
+    &:hover {
+      color: #fff;
+      background-color: lighten(@mv-color-green, 10%);
+    }
+    &.active {
+      color: #fff;
+      background-color: @gray;
+    }
+    @media (max-width: @screen-sm) {
+      width: 50%;
+      font-size: 11px;
+    }
+  }
 }
