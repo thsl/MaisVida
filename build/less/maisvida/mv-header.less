@@ -136,11 +136,18 @@
     border-radius: 0;
     box-shadow: none;
   }
-  .btn-header{
+  .btn-header {
     height: @navbar-height;
     padding: 27px 15px 15px 15px;
     vertical-align: middle;
     text-align: center;
     color: @mv-color-darkblue;
+
+  }
+  .btn-header.btn-sound.active{
+    color:#9A9A9A;
+  }
+  .btn-header.btn-sound.active .fa-volume-up:before {
+    content: "\f026";
   }
 }
