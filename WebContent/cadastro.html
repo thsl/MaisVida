@@ -21,6 +21,13 @@
 </head>
 
 <body class="hold-transition skin-maisvida sidebar-mini sidebar-collapse">
+<link href="include/admin-lte-2_3_0/plugins/select2/select2.css" rel="stylesheet"/>
+<script src="include/admin-lte-2_3_0/plugins/select2/select2.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".multiple-select").select2();
+  });
+</script>
 
 <div class="wrapper">
 
@@ -48,10 +55,14 @@
           </div>
         </form>
       </div>
-      <a href="#" type="button" class="btn voice-btn text-center pull-right" data-toggle="button"
-         aria-pressed="false" autocomplete="off">
+      <a href="#" type="button" class="btn voice-btn text-center pull-right" data-toggle="modal"
+         data-target="#Modal-gray">
         <img src="app/img/icons/voice-w.png" class="img-adaptative">
         <br>Comandos de voz
+      </a>
+      <a href="#" class="btn btn-header pull-right btn-sound" data-toggle="button"
+         aria-pressed="false" autocomplete="off">
+        <i class="fa fa-volume-up fa-2x" aria-hidden="true"></i><br>Som descritivo
       </a>
       <a href="#" class="btn btn-header pull-right has-alert">
         <span class="ball-alert">1</span>
@@ -298,7 +309,7 @@
                 </div>
               </div>
               <div class="row mt-md">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                   <label>Nome do pai</label>
                   <div class="input-group input-voice-btn">
                     <input type="text" class="form-control">
@@ -309,7 +320,9 @@
                     </span>
                   </div>
                 </div>
-                <div class="col-sm-6">
+              </div>
+              <div class="row mt-md">
+                <div class="col-sm-12">
                   <label>Nome da mãe</label>
                   <div class="input-group input-voice-btn">
                     <input type="text" class="form-control">
@@ -325,25 +338,19 @@
                 <div class="col-sm-8">
                   <label>Observações</label>
                   <div class="input-group input-voice-btn">
-                    <textarea class="form-control" rows="5"></textarea>
+                    <select class="form-control multiple-select" multiple="multiple">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
                     <span class="input-group-btn">
                       <span class="input-group-btn">
                               <button type="button" class="btn btn-voice"></button>
                             </span>
                     </span>
                   </div>
-                </div>
-                <div class="col-sm-4">
-                  <p class="mt-md"><a href="#" class="mt-md"><i class="fa fa-plus-circle"
-                                                                aria-hidden="true"></i>
-                    <strong>Idoso</strong></a></p>
-                  <p><a href="#" class="mt-md"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <strong>Particular</strong></a></p>
-                  <p><a href="#" class="mt-md"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <strong>Ortopedia</strong></a></p>
-                  <p><a href="#" class="mt-md"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <strong>Cardiologia</strong></a>
-                  </p>
                 </div>
               </div>
             </div>
@@ -653,5 +660,23 @@
   </div>
 </div>
 
+
+<!-- modal preenchimento -->
+<div class="modal fade modal-gray" tabindex="-1" id="Modal-gray" role="dialog"
+     aria-labelledby="Modal-gray">
+  <div class="modal-dialog modal-lg" data-dismiss="modal">
+    <div class="modal-content">
+      <div class="modal-body pb-md">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <!-- tabs left -->
+            <p><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></p>
+            <p>Analisando comandos de voz...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
